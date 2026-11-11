@@ -1,0 +1,249 @@
+/* CONFIGURACIÓN GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #f5efff;
+    color: #30205c;
+}
+
+/* ENCABEZADO */
+
+header {
+    background: linear-gradient(135deg, #9c72e8, #5425a9);
+    color: white;
+    padding: 25px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #e8d9ff;
+}
+
+/* SECCIONES */
+
+section {
+    padding: 65px 8%;
+    text-align: center;
+}
+
+.titulo {
+    font-size: 32px;
+    color: #5925a5;
+    margin-bottom: 15px;
+}
+
+.descripcion {
+    margin-bottom: 35px;
+    color: #6d5a8c;
+    line-height: 1.6;
+}
+
+/* INICIO */
+
+.inicio {
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #e8d9ff, #f9efff);
+}
+
+.inicio h1 {
+    font-size: 45px;
+    color: #5925a5;
+    margin-bottom: 15px;
+}
+
+.inicio p {
+    font-size: 19px;
+    max-width: 650px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+/* BOTONES */
+
+.boton {
+    display: inline-block;
+    background-color: #5925a5;
+    color: white;
+    padding: 13px 28px;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.boton:hover {
+    background-color: #8b61d0;
+    transform: scale(1.05);
+}
+
+/* PRODUCTOS */
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+}
+
+.producto {
+    background-color: white;
+    border-radius: 18px;
+    padding: 20px;
+    box-shadow: 0 5px 15px #c9b5e5;
+    transition: 0.3s;
+}
+
+.producto:hover {
+    transform: translateY(-7px);
+}
+
+.producto img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.producto h3 {
+    color: #5925a5;
+    margin: 15px 0 10px;
+}
+
+.producto p {
+    color: #65577a;
+    margin-bottom: 10px;
+}
+
+.precio {
+    color: #7b36c9;
+    font-size: 21px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* PROCESO DE COMPRA */
+
+.pasos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.paso {
+    background-color: white;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 4px 12px #c9b5e5;
+}
+
+.paso h3 {
+    color: #672daf;
+    margin-bottom: 12px;
+}
+
+.paso p {
+    color: #65577a;
+    line-height: 1.6;
+}
+
+/* FONDO DE COMPRA */
+
+.compra {
+    background-color: #e8d9ff;
+}
+
+/* DOMICILIOS */
+
+.entregas {
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 750px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+/* CONTACTO */
+
+.contacto {
+    background: linear-gradient(135deg, #5925a5, #9c72e8);
+    color: white;
+}
+
+.contacto .titulo {
+    color: white;
+}
+
+.contacto > p {
+    line-height: 1.8;
+}
+
+.contacto .paso {
+    color: #30205c;
+}
+
+.contacto .paso p {
+    color: #65577a;
+}
+
+.contacto .boton {
+    background-color: #5925a5;
+    color: white;
+}
+
+/* PIE DE PÁGINA */
+
+footer {
+    background-color: #28134f;
+    color: white;
+    text-align: center;
+    padding: 22px;
+    line-height: 1.8;
+}
+
+/* ADAPTACIÓN A CELULARES */
+
+@media (max-width: 600px) {
+
+    header {
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 7px;
+    }
+
+    .inicio h1 {
+        font-size: 34px;
+    }
+
+    section {
+        padding: 45px 6%;
+    }
+
+}
